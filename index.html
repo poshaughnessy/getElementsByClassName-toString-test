@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+  </head>
+  <body>
+    <h1>getElementsByClassName toString test</h1>
+    <div id="output">
+    </div>
+    <script>
+      try {
+        var outputDiv = document.getElementById('output');
+        outputDiv.innerHTML = 'toString: ' + document.getElementsByClassName.toString;
+        outputDiv.innerHTML += '<br>ToString: ' + document.getElementsByClassName.ToString;
+      catch(err) {
+        alert('Error: ' + err);
+      }
+    </script>
+  </body>
+</html>
